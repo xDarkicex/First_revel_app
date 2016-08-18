@@ -1,4 +1,5 @@
-{{set . "title" "Home"}}
+
+{{set . "title" "Welcome"}}
 {{template "layout/header.html" .}}
 
 <div class="container">
@@ -10,20 +11,16 @@
 </div>
 
 <header class="jumbotron" style="background-color:#A9F16C">
-  <div class="nav">
-    <nav>
-  
-    </nav>
   <div class="container">
     <div class="row">
-      <h1>{{.name}} {{.Portfolio}} </h1>
+      <h1>{{.greeting}} {{.name}}</h1>
       <p></p>
     </div>
   </div>
 </header>
 
 <main class="container">
-  {{template "yield.html" .}}
+  <a href="/">Back to form</a>
 </main>
 
 {{template "layout/footer.html" .}}
